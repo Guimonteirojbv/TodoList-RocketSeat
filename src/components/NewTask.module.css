@@ -1,0 +1,43 @@
+.newTaskForm {
+  display: flex;
+  gap: 8px;
+}
+
+.newTaskForm input {
+  width: 100%;
+  background: var(--gray-500);
+  color: var(--gray-300);
+  border: 1px solid var(--gray-700);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.newTaskForm input:focus {
+  color: var(--gray-100);
+}
+
+.addTask {
+  background: var(--blue-dark);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  color: var(--gray-100);
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  transition: backgroud 1s;
+}
+
+.addTask:hover {
+  background: var(--blue);
+}
+
+@media (max-width: 768px) {
+  .newTaskForm {
+    flex-direction: column;
+  }
+}

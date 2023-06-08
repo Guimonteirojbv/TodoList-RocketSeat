@@ -1,0 +1,64 @@
+.task {
+  background-color: var(--gray-400);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.task + .task {
+  margin-top: 12px;
+}
+
+.inputWithLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.inputWithLabel label {
+  max-width: 39.5rem;
+  font-size: 0.87rem;
+  padding-right: 0.75rem;
+  color: var(--gray-100);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.checkbox {
+  appearance: none;
+  border: 2px solid var(--blue);
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background: var(--purple-dark);
+  border: 2px solid var(--purple-dark);
+  transition: 0.1s;
+}
+
+.checkbox:checked + label {
+  color: var(--gray-300);
+  text-decoration: line-through;
+  transition: 0.1s;
+}
+.checkbox:checked::before {
+  content: "✓";
+  font-size: 0.8rem;
+  top: -0.03rem;
+  left: 0.2rem;
+  color: var(--gray-100);
+  position: absolute;
+}
+
+.buttonDelete {
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

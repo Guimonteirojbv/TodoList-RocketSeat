@@ -1,0 +1,17 @@
+.containerApp {
+  max-width: 46rem;
+  margin: 0 auto;
+  position: relative;
+
+  top: -28px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+  .containerApp {
+    display: grid;
+    padding: 0.5rem;
+  }
+}

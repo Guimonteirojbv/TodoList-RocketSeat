@@ -1,0 +1,16 @@
+.header {
+  background: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem 0px 5rem 0px;
+  gap: 12px;
+}
+
+.header h1 {
+  color: var(--blue);
+}
+
+.header h1 > span {
+  color: var(--purple-dark);
+}
